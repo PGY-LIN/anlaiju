@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安萊居 & 愛來聚海景民宿</title>
+  <meta name="description" content="安萊居 & 愛來聚海景民宿位於澎湖馬公安宅里，擁有無敵海景視野，是放鬆心情與感受澎湖魅力的最佳選擇。">
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      background-color: #fff8f4;
+      color: #333;
+    }
+    header {
+      background: url('A_2D_digital_illustration_in_a_flat,_modern,_illus.png') no-repeat center center/cover;
+      text-align: center;
+      padding: 6rem 1rem;
+      color: #fff;
+      background-size: cover;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      background: rgba(0,0,0,0.5);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      background: rgba(0,0,0,0.4);
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 1rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #cc5c5c;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.4s ease-in-out;
+    }
+    .card {
+      min-width: 250px;
+      margin: 0 10px;
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .card img {
+      width: 100%;
+      display: block;
+    }
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    #prevBtn1 { left: 10px; }
+    #nextBtn1 { right: 10px; }
+    #prevBtn2 { left: 10px; }
+    #nextBtn2 { right: 10px; }
+    .contact-info img {
+      max-width: 160px;
+      margin-top: 1rem;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>安萊居 & 愛來聚海景民宿</h1>
+    <p>安萊居所安心在，愛來聚處幸福開</p>
+  </header>
+
+  <section>
+    <h2>民宿介紹</h2>
+    <p>「安萊居 & 愛來聚海景民宿」位於澎湖馬公安宅里，擁有無敵海景視野，鄰近市區、機場、碼頭，是放鬆心情與感受澎湖魅力的最佳選擇。每間房型設計溫馨舒適，讓您有如回家般自在。</p>
+  </section>
+
+  <section>
+    <h2>雙人房</h2>
+    <p>雙人房型簡約大方，配備電視、小冰箱，獨立衛浴、乾溼分離，皆配有免治馬桶，適合情侶或小家庭。</p>
+    <div class="carousel-container">
+      <button class="nav-btn" id="prevBtn1">&#8249;</button>
+      <div class="carousel-track" id="carouselTrack1">
+        <div class="card"><img src="double1.jpg" alt="雙人房1"></div>
+        <div class="card"><img src="double2.jpg" alt="雙人房2"></div>
+        <div class="card"><img src="double3.jpg" alt="雙人房3"></div>
+        <div class="card"><img src="double4.jpg" alt="雙人房4"></div>
+      </div>
+      <button class="nav-btn" id="nextBtn1">&#8250;</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>四人房</h2>
+    <p>四人房型溫馨舒適，配有電視、小冰箱，獨立衛浴、乾溼分離，每間皆配有免治馬桶，適合朋友或家庭出遊。</p>
+    <div class="carousel-container">
+      <button class="nav-btn" id="prevBtn2">&#8249;</button>
+      <div class="carousel-track" id="carouselTrack2">
+        <div class="card"><img src="quad1.jpg" alt="四人房1"></div>
+        <div class="card"><img src="quad2.jpg" alt="四人房2"></div>
+        <div class="card"><img src="quad3.jpg" alt="四人房3"></div>
+      </div>
+      <button class="nav-btn" id="nextBtn2">&#8250;</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>聯絡資訊</h2>
+    <div class="contact-info">
+      <p>地址：澎湖縣馬公市安宅里宅腳嶼27-16號（海龍釣蝦場旁）</p>
+      <p>聯絡人：鐘秀秀</p>
+      <p>電話：0932-779-408</p>
+      <p>LINE：</p>
+      <img src="LINE.jpg" alt="LINE QR Code">
+      <p>FB 粉絲專頁：<a href="https://www.facebook.com/share/1AcgEss4Rv/?mibextid=LQQJ4d" target="_blank">前往 Facebook</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>地圖位置</h2>
+    <iframe src="https://www.google.com/maps?q=澎湖縣馬公市安宅里宅腳嶼27-16號&output=embed"></iframe>
+  </section>
+
+  <script>
+    function setupCarousel(trackId, prevBtnId, nextBtnId) {
+      const track = document.getElementById(trackId);
+      const prevBtn = document.getElementById(prevBtnId);
+      const nextBtn = document.getElementById(nextBtnId);
+      let index = 0;
+
+      function update() {
+        const cardWidth = track.querySelector('.card').offsetWidth + 20;
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+      }
+
+      nextBtn.addEventListener('click', () => {
+        if (index < track.children.length - 1) {
+          index++;
+          update();
+        }
+      });
+
+      prevBtn.addEventListener('click', () => {
+        if (index > 0) {
+          index--;
+          update();
+        }
+      });
+
+      window.addEventListener('resize', update);
+    }
+
+    setupCarousel('carouselTrack1', 'prevBtn1', 'nextBtn1');
+    setupCarousel('carouselTrack2', 'prevBtn2', 'nextBtn2');
+  </script>
+</body>
+</html>
