@@ -32,11 +32,11 @@
     }
     .header-text h1 {
       margin: 0;
-      font-size: 2.4rem;
+      font-size: 3rem;
       font-weight: bold;
     }
     .header-text p {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       margin-top: 0.5rem;
     }
     section {
@@ -44,18 +44,17 @@
       max-width: 900px;
       margin: auto;
       text-align: left;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
     h2 {
       color: #d94f70;
-      font-size: 1.8rem;
-      text-align: center;
+      font-size: 2rem;
     }
     .room-title {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
     .room-desc {
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
     .room-gallery-container {
       display: flex;
@@ -86,7 +85,7 @@
     .nav-btn {
       background-color: rgba(255, 255, 255, 0.9);
       border: none;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       cursor: pointer;
       padding: 0.5rem 1rem;
       color: #d94f70;
@@ -109,7 +108,7 @@
       color: #d94f70;
       border: none;
       padding: 0.8rem 1.5rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
       border-radius: 30px;
       cursor: pointer;
       text-decoration: none;
@@ -130,20 +129,20 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0,0,0,0.8);
       justify-content: center;
       align-items: center;
       z-index: 1000;
       flex-direction: column;
     }
     .lightbox img {
-      max-width: 95%;
+      max-width: 90%;
       max-height: 80vh;
       border-radius: 10px;
     }
     .lightbox .nav-btn, .close-btn {
       position: absolute;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255,255,255,0.9);
       border: none;
       font-size: 2rem;
       padding: 0.5rem 1rem;
@@ -161,79 +160,130 @@
     .lightbox .nav-btn.right {
       right: 30px;
     }
-
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       .header-text h1 {
         font-size: 2rem;
       }
       .header-text p {
-        font-size: 1rem;
-      }
-      .room-gallery img {
-        width: 100%;
-        height: auto;
-      }
-      .room-gallery-container {
-        width: 100%;
-        overflow: hidden;
-      }
-      .room-gallery {
-        width: 100%;
-        max-width: none;
-      }
-      .room-gallery img.active {
-        display: block;
-        width: 100%;
-      }
-      .room-gallery img {
-        width: 100%;
-        height: auto;
+        font-size: 1.1rem;
       }
       .nav-btn {
         font-size: 1.5rem;
       }
-      .qr {
-        width: 120px;
-      }
       .fb-button {
         width: 90%;
-        font-size: 0.9rem;
+        font-size: 1rem;
       }
       .map-embed iframe {
         height: 250px;
       }
-    }
-
-    @media (max-width: 480px) {
-      .header-text h1 {
-        font-size: 1.6rem;
-      }
-      .header-text p {
-        font-size: 0.9rem;
-      }
-      .nav-btn {
-        font-size: 1.3rem;
-      }
-      .room-title {
-        font-size: 1.1rem;
-      }
-      .room-desc {
-        font-size: 0.8rem;
-      }
-      .fb-button {
-        font-size: 0.8rem;
-      }
-      .map-embed iframe {
-        height: 200px;
-      }
-      .lightbox img {
-        width: 100%;
-        height: auto;
+      .qr {
+        width: 120px;
       }
     }
   </style>
 </head>
 <body>
-  <!-- 內容部分保持不變 -->
+  <header>
+    <img src="cover.jpg" alt="主視覺圖片">
+    <div class="header-text">
+      <h1>安萊居 & 愛來聚海景民宿</h1>
+      <p>安萊居所安心在，愛來聚處幸福開</p>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="center-title">關於我們</h2>
+    <p>「安萊居 & 愛來聚海景民宿」位於澎湖馬公安宅里，擁有無敵海景視野，鄰近市區、機場、碼頭，是放鬆心情與感受澎湖魅力的最佳選擇。每間房型設計溫馨舒適，讓您有如回家般自在。</p>
+
+    <h2 class="center-title">房型簡介</h2>
+
+    <div class="room-section">
+      <h3 class="room-title">雙人房</h3>
+      <p class="room-desc">雙人房型簡約大方，配備電視、小冰箱，獨立衛浴、乾溼分離，皆配有免治馬桶，適合情侶或小家庭。</p>
+      <div class="room-gallery-container">
+        <button class="nav-btn left" onclick="slideGallery('double', -1)">&#9664;</button>
+        <div class="room-gallery" id="double-gallery">
+          <img src="double1.jpg" class="active" alt="雙人房1" onclick="openLightbox(this, 'double')">
+          <img src="double2.jpg" alt="雙人房2" onclick="openLightbox(this, 'double')">
+          <img src="double3.jpg" alt="雙人房3" onclick="openLightbox(this, 'double')">
+          <img src="double4.jpg" alt="雙人房4" onclick="openLightbox(this, 'double')">
+        </div>
+        <button class="nav-btn right" onclick="slideGallery('double', 1)">&#9654;</button>
+      </div>
+    </div>
+
+    <div class="room-section">
+      <h3 class="room-title">四人房</h3>
+      <p class="room-desc">四人房型溫馨舒適，配有電視、小冰箱，獨立衛浴、乾溼分離，每間皆配有免治馬桶，適合朋友或家庭出遊。</p>
+      <div class="room-gallery-container">
+        <button class="nav-btn left" onclick="slideGallery('quad', -1)">&#9664;</button>
+        <div class="room-gallery" id="quad-gallery">
+          <img src="quad1.jpg" class="active" alt="四人房1" onclick="openLightbox(this, 'quad')">
+          <img src="quad2.jpg" alt="四人房2" onclick="openLightbox(this, 'quad')">
+          <img src="quad3.jpg" alt="四人房3" onclick="openLightbox(this, 'quad')">
+        </div>
+        <button class="nav-btn right" onclick="slideGallery('quad', 1)">&#9654;</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="center-text">
+    <h2>聯絡我們</h2>
+    <p>聯絡人：鐘秀秀<br>電話：0932-779-408</p>
+    <img src="LINE.jpg" alt="聯絡人 QR Code" class="qr">
+
+    <h2>粉絲專頁</h2>
+    <a class="fb-button" href="https://www.facebook.com/share/1AcgEss4Rv/?mibextid=LQQJ4d" target="_blank">前往 Facebook 粉絲專頁</a>
+  </section>
+
+  <section class="map-embed">
+    <h2 class="center-title">我們的位置</h2>
+    <iframe src="https://www.google.com/maps?q=澎湖縣馬公市安宅里宅腳嶼27-16號&output=embed"></iframe>
+    <p>地址：澎湖縣馬公市安宅里宅腳嶼27-16號（海龍釣蝦場旁）</p>
+  </section>
+
+  <footer>
+    &copy; 2025 安萊居 & 愛來聚海景民宿
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="close-btn" onclick="closeLightbox()">&times;</button>
+    <button class="nav-btn left" onclick="changeLightboxImage(-1)">&#9664;</button>
+    <img id="lightbox-img" src="" alt="預覽">
+    <button class="nav-btn right" onclick="changeLightboxImage(1)">&#9654;</button>
+  </div>
+
+  <script>
+    const galleryIndexes = { double: 0, quad: 0 };
+
+    function slideGallery(id, delta) {
+      const gallery = document.getElementById(`${id}-gallery`);
+      const images = gallery.getElementsByTagName('img');
+      images[galleryIndexes[id]].classList.remove('active');
+      galleryIndexes[id] = (galleryIndexes[id] + delta + images.length) % images.length;
+      images[galleryIndexes[id]].classList.add('active');
+    }
+
+    let currentGroup = '';
+    let currentIndex = 0;
+    function openLightbox(img, group) {
+      const gallery = document.getElementById(`${group}-gallery`).getElementsByTagName('img');
+      currentGroup = group;
+      currentIndex = Array.from(gallery).indexOf(img);
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    function changeLightboxImage(delta) {
+      const gallery = document.getElementById(`${currentGroup}-gallery`).getElementsByTagName('img');
+      currentIndex = (currentIndex + delta + gallery.length) % gallery.length;
+      document.getElementById('lightbox-img').src = gallery[currentIndex].src;
+    }
+  </script>
 </body>
 </html>
