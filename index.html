@@ -32,35 +32,35 @@
     }
     .header-text h1 {
       margin: 0;
-      font-size: 3rem;
+      font-size: 4rem; /* 字體放大 */
       font-weight: bold;
     }
     .header-text p {
-      font-size: 1.4rem;
+      font-size: 2rem; /* 字體放大 */
       margin-top: 0.5rem;
     }
     section {
-      padding: 2rem;
+      padding: 3rem; /* 增加間距 */
       max-width: 900px;
       margin: auto;
-      text-align: left;
-      font-size: 1.1rem;
+      text-align: center; /* 置中 */
+      font-size: 1.2rem; /* 字體放大 */
     }
     h2 {
       color: #d94f70;
-      font-size: 2rem;
+      font-size: 2.5rem; /* 字體放大 */
     }
     .room-title {
-      font-size: 1.5rem;
+      font-size: 2rem; /* 字體放大 */
     }
     .room-desc {
-      font-size: 1.05rem;
+      font-size: 1.3rem; /* 字體放大 */
     }
     .room-gallery-container {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 1rem;
+      margin-top: 2rem;
     }
     .room-gallery {
       width: 90%;
@@ -85,21 +85,21 @@
     .nav-btn {
       background-color: rgba(255, 255, 255, 0.9);
       border: none;
-      font-size: 1.8rem;
+      font-size: 2rem; /* 字體放大 */
       cursor: pointer;
-      padding: 0.5rem 1rem;
+      padding: 1rem 1.5rem;
       color: #d94f70;
       border-radius: 5px;
       margin: 0 1rem;
     }
     .qr {
-      width: 150px;
+      width: 180px; /* 調整 QR Code 大小 */
       display: block;
-      margin: 1rem auto;
+      margin: 2rem auto;
     }
     .map-embed iframe {
       width: 100%;
-      height: 300px;
+      height: 350px; /* 調整地圖大小 */
       border: 0;
       border-radius: 10px;
     }
@@ -107,8 +107,8 @@
       background-color: #ffe0e6;
       color: #d94f70;
       border: none;
-      padding: 0.8rem 1.5rem;
-      font-size: 1.1rem;
+      padding: 1rem 2rem;
+      font-size: 1.3rem; /* 字體放大 */
       border-radius: 30px;
       cursor: pointer;
       text-decoration: none;
@@ -119,7 +119,7 @@
       background: #ffe0e6;
       padding: 1rem;
       text-align: center;
-      font-size: 1rem;
+      font-size: 1.2rem; /* 字體放大 */
       color: #555;
     }
     .lightbox {
@@ -144,7 +144,7 @@
       position: absolute;
       background: rgba(255,255,255,0.9);
       border: none;
-      font-size: 2rem;
+      font-size: 2rem; /* 字體放大 */
       padding: 0.5rem 1rem;
       cursor: pointer;
       color: #d94f70;
@@ -162,23 +162,23 @@
     }
     @media (max-width: 600px) {
       .header-text h1 {
-        font-size: 2rem;
+        font-size: 3rem; /* 字體放大 */
       }
       .header-text p {
-        font-size: 1.1rem;
+        font-size: 1.5rem; /* 字體放大 */
       }
       .nav-btn {
-        font-size: 1.5rem;
+        font-size: 1.8rem; /* 字體放大 */
       }
       .fb-button {
         width: 90%;
-        font-size: 1rem;
+        font-size: 1.2rem; /* 字體放大 */
       }
       .map-embed iframe {
-        height: 250px;
+        height: 300px; /* 調整地圖大小 */
       }
       .qr {
-        width: 120px;
+        width: 150px; /* 調整 QR Code 大小 */
       }
     }
   </style>
@@ -193,10 +193,10 @@
   </header>
 
   <section>
-    <h2 class="center-title">關於我們</h2>
+    <h2>關於我們</h2>
     <p>「安萊居 & 愛來聚海景民宿」位於澎湖馬公安宅里，擁有無敵海景視野，鄰近市區、機場、碼頭，是放鬆心情與感受澎湖魅力的最佳選擇。每間房型設計溫馨舒適，讓您有如回家般自在。</p>
 
-    <h2 class="center-title">房型簡介</h2>
+    <h2>房型簡介</h2>
 
     <div class="room-section">
       <h3 class="room-title">雙人房</h3>
@@ -228,7 +228,7 @@
     </div>
   </section>
 
-  <section class="center-text">
+  <section>
     <h2>聯絡我們</h2>
     <p>聯絡人：鐘秀秀<br>電話：0932-779-408</p>
     <img src="LINE.jpg" alt="聯絡人 QR Code" class="qr">
@@ -238,7 +238,7 @@
   </section>
 
   <section class="map-embed">
-    <h2 class="center-title">我們的位置</h2>
+    <h2>我們的位置</h2>
     <iframe src="https://www.google.com/maps?q=澎湖縣馬公市安宅里宅腳嶼27-16號&output=embed"></iframe>
     <p>地址：澎湖縣馬公市安宅里宅腳嶼27-16號（海龍釣蝦場旁）</p>
   </section>
