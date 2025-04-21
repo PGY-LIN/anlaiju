@@ -43,10 +43,8 @@
       padding: 2rem;
       max-width: 900px;
       margin: auto;
+      text-align: left;
       font-size: 1.1rem;
-    }
-    .center-content {
-      text-align: center;
     }
     h2 {
       color: #d94f70;
@@ -54,11 +52,9 @@
     }
     .room-title {
       font-size: 1.5rem;
-      margin-top: 1.5rem;
     }
     .room-desc {
       font-size: 1.05rem;
-      margin-bottom: 1rem;
     }
     .room-gallery-container {
       display: flex;
@@ -106,9 +102,6 @@
       height: 300px;
       border: 0;
       border-radius: 10px;
-    }
-    .map-embed p {
-      text-align: center;
     }
     .fb-button {
       background-color: #ffe0e6;
@@ -167,12 +160,22 @@
     .lightbox .nav-btn.right {
       right: 30px;
     }
+    .map-embed h2 {
+      text-align: center;
+    }
     @media (max-width: 600px) {
+      .header-text {
+        top: 40%;
+        padding: 0 1rem;
+        text-align: center;
+      }
       .header-text h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
+        line-height: 1.2;
       }
       .header-text p {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        line-height: 1.4;
       }
       .nav-btn {
         font-size: 1.5rem;
@@ -199,11 +202,11 @@
     </div>
   </header>
 
-  <section class="center-content">
-    <h2>關於我們</h2>
+  <section>
+    <h2 class="center-title">關於我們</h2>
     <p>「安萊居 & 愛來聚海景民宿」位於澎湖馬公安宅里，擁有無敵海景視野，鄰近市區、機場、碼頭，是放鬆心情與感受澎湖魅力的最佳選擇。每間房型設計溫馨舒適，讓您有如回家般自在。</p>
 
-    <h2>房型簡介</h2>
+    <h2 class="center-title">房型簡介</h2>
 
     <div class="room-section">
       <h3 class="room-title">雙人房</h3>
@@ -235,7 +238,7 @@
     </div>
   </section>
 
-  <section class="center-content">
+  <section class="center-text">
     <h2>聯絡我們</h2>
     <p>聯絡人：鐘秀秀<br>電話：0932-779-408</p>
     <img src="LINE.jpg" alt="聯絡人 QR Code" class="qr">
@@ -244,12 +247,11 @@
     <a class="fb-button" href="https://www.facebook.com/share/1AcgEss4Rv/?mibextid=LQQJ4d" target="_blank">前往 Facebook 粉絲專頁</a>
   </section>
 
-  <section class="map-embed center-content">
-  <h2>我們的位置</h2>
-  <iframe src="https://www.google.com/maps?q=澎湖縣馬公市安宅里宅腳嶼27-16號&output=embed"></iframe>
-  <p>地址：澎湖縣馬公市安宅里宅腳嶼27-16號（海龍釣蝦場旁）</p>
-</section>
-
+  <section class="map-embed">
+    <h2>我們的位置</h2>
+    <iframe src="https://www.google.com/maps?q=澎湖縣馬公市安宅里宅腳嶼27-16號&output=embed"></iframe>
+    <p style="text-align:center;">地址：澎湖縣馬公市安宅里宅腳嶼27-16號（海龍釣蝦場旁）</p>
+  </section>
 
   <footer>
     &copy; 2025 安萊居 & 愛來聚海景民宿
