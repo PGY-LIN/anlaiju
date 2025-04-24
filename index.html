@@ -67,6 +67,7 @@
       align-items: center;
       justify-content: center;
       margin-top: 1rem;
+      flex-wrap: wrap;
     }
     .room-gallery {
       width: 90%;
@@ -140,6 +141,7 @@
       align-items: center;
       z-index: 1000;
       flex-direction: column;
+      padding: 1rem;
     }
     .lightbox img {
       max-width: 90%;
@@ -169,22 +171,17 @@
     .map-embed h2 {
       text-align: center;
     }
-
-    /* === 新增：置中聯絡資訊與 FB 按鈕 === */
     section.center-text {
       text-align: center;
     }
-
     section.center-text p {
       text-align: center;
     }
-
     section.center-text img.qr {
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
-
     section.center-text .fb-button {
       display: inline-block;
       margin: 1rem auto 0;
@@ -295,7 +292,7 @@
     const galleryIndexes = { double: 0, quad: 0 };
 
     function slideGallery(id, delta) {
-      const gallery = document.getElementById(${id}-gallery);
+      const gallery = document.getElementById(`${id}-gallery`);
       const images = gallery.getElementsByTagName('img');
       images[galleryIndexes[id]].classList.remove('active');
       galleryIndexes[id] = (galleryIndexes[id] + delta + images.length) % images.length;
@@ -304,8 +301,9 @@
 
     let currentGroup = '';
     let currentIndex = 0;
+
     function openLightbox(img, group) {
-      const gallery = document.getElementById(${group}-gallery).getElementsByTagName('img');
+      const gallery = document.getElementById(`${group}-gallery`).getElementsByTagName('img');
       currentGroup = group;
       currentIndex = Array.from(gallery).indexOf(img);
       document.getElementById('lightbox-img').src = img.src;
@@ -317,7 +315,7 @@
     }
 
     function changeLightboxImage(delta) {
-      const gallery = document.getElementById(${currentGroup}-gallery).getElementsByTagName('img');
+      const gallery = document.getElementById(`${currentGroup}-gallery`).getElementsByTagName('img');
       currentIndex = (currentIndex + delta + gallery.length) % gallery.length;
       document.getElementById('lightbox-img').src = gallery[currentIndex].src;
     }
